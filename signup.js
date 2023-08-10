@@ -5,25 +5,25 @@ function showVehicle() {
     newDiv.innerHTML = `<h2>Vehicle Owner Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Email: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Password: </label>
-                            <input>
+                            <input class="field" required>
                             <label>National ID: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Phone Number: </label>
-                            <input>
+                            <input class="field" required>
                             <label>License Number: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Vehicle Registration Number: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Vehicle Type: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Vehicle Model: </label>
-                            <input>
+                            <input class="field" required>
                             <br>
-                            <button class="submit">Submit</button>
+                            <input type="submit" class="submit"></input>
                         </div>
                         <br><br><br>`;
     oldContent.appendChild(newDiv);
@@ -36,25 +36,25 @@ function showGarage() {
     newDiv.innerHTML = `<h2>Garage Owner Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Email: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Password: </label>
-                            <input>
+                            <input class="field" required>
                             <label>National ID: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Phone Number: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Garage Address: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Garage Size/Area: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Garage Capacity: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Supervisor National ID: </label>
-                            <input>
+                            <input class="field" required>
                             <br>
-                            <button class="submit">Submit</button>
+                            <input type="submit" class="submit"></input>
                         </div>
                         <br><br><br>`;
     oldContent.appendChild(newDiv);
@@ -67,17 +67,17 @@ function showSuper() {
     newDiv.innerHTML = `<h2>Supervisor Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Email: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Password: </label>
-                            <input>
+                            <input class="field" required>
                             <label>National ID: </label>
-                            <input>
+                            <input class="field" required>
                             <label>Phone Number: </label>
-                            <input>
+                            <input class="field" required>
                             <br>
-                            <button class="submit">Submit</button>
+                            <input type="submit" class="submit"></input>
                         </div>
                         <br><br><br>`;
     oldContent.appendChild(newDiv);
