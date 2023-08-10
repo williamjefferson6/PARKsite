@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your account</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="login-form">
+        <form>
+            <div class="head">
+                <img class="imglogo" src="images/logo.png">
+                <h1>Login to PARKsite</h1>
+            </div>
+            <div class="content">
+                <div class="input-field">
+                    <input type="email" placeholder="User ID" autocomplete="nope">
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password" autocomplete="new-password">
+                </div>
+                <br>
+                <div class="type-field">
+                    <button id="myBtn" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Select Your User Type
+                    </button>
+                    <ul id="menuX" class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button">Vehicle Owner</button></li>
+                        <li><button class="dropdown-item" type="button">Garage Owner</button></li>
+                        <li><button class="dropdown-item" type="button">Supervisor</button></li>
+                    </ul>
+                </div>
+                <br>
+                <a href="#" class="link">Forgot Your Password?</a>
+            </div>
+            <div class="action">
+                <button>Log in</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
