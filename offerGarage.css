@@ -1,0 +1,168 @@
+/*..................header & footer..................*/
+
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    color: black;
+}
+
+.account:link {
+    color: black;
+}
+
+.account:visited {
+    color: black;
+}
+
+.account:hover {
+    color: #8bc052;
+}
+
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 120px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+/*..................header & footer..................*/
+
+/*..................dropdown button..................*/
+
+.myBtn {
+    background-color: #9ed368;
+    border-radius: 5px;
+    border: 2px solid #9ed368;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.myBtn:hover {
+    background-color: #8bc052;
+}
+.myBtn:focus {
+    background-color: #8bc052;
+}
+
+/*..................dropdown button..................*/
+
+.mother-div {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.side-bar-options {
+    margin-bottom: 30px;
+    background-color: #9ed368;
+    border-radius: 5px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 220px;
+    height: 40px;
+    font-size: 18px;
+}
+.side-bar-options:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+.side-bar {
+    display: flex;
+    flex-direction: column;
+}
+.window {
+    width: 70vw;
+    /* background-color: cadetblue; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.qq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lala {
+    width: 290px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 5px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ..................form.................. */
+
+.form label {
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: start;
+}
+
+.field {
+    width: 250px;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+}
+
+.field:focus {
+    border: 3px solid #9ed368;
+}
+
+.submit {
+    width: 8rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #9ed368;
+}
+
+.submit:hover {
+    background-color: #8bc052;
+}
+
+/* ..................form.................. */
