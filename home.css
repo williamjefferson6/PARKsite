@@ -1,0 +1,179 @@
+.imglogo {
+    overflow: hidden;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.imglogo:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+}
+
+.account{
+    color: black;
+}
+
+.account:link{
+    color: black;
+}
+
+.account:visited{
+    color: black;
+}
+
+.account:hover{
+    color: #8bc052;
+}
+
+.btn1{
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 90px;
+    height: 40px;
+    
+}
+
+.btn1:hover{
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+
+}
+
+.btn2{
+    width: 70px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #8bc052;
+    border-radius: 30px;
+    margin-left: 10px;
+    
+}
+
+#banner{
+    width: 99vw;
+    height: 49.5vw;
+    background-image: url("images/young-pregnant-woman-testing-car-car-showroom.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bannerCard{
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    margin-left: 10vw;
+    margin-top: 15vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.tabs{
+    background-color: rgb(237, 231, 231);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+.tabs button{
+    border: none;
+    background-color: rgb(237, 231, 231);
+}
+.tabs button:focus{
+    font-weight: bold;
+}
+.work{
+    display: flex;
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(233, 233, 233);
+}
+.workAt{
+
+    padding: 80px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 3em;
+    font-weight: bold;
+    
+   
+    
+}
+.workAt1{
+    display: flex;
+}
+.workAt1 button{
+    margin-left: 2vw;
+    font-size: 0.60em;
+    border: none;
+    border-radius: 50px;
+    background-color: #9ed368;
+    margin-bottom: 12px;
+    width: 250px;
+}
+.workAt1 button:hover{
+    background-color: #8bc052;
+}
+.about1{
+    margin-top: 100px;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 99vw;
+}
+.left{
+    height: 80vh;
+background-color: white;
+width: 40vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius:  0 0 10px 10px;
+}
+.left img{
+    width: 40vw;
+    border-radius: 10px;
+    
+}
+.left p{
+    font-size: 20px;
+    
+}
+.right{
+    height: 80vh;
+    background-color:white;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:  0 0 10px 10px;
+}
+.right img{
+    width: 40vw;
+    border-radius: 10px;
+}
+.right p{
+    font-size: 20px;
+}
