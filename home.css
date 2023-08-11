@@ -251,6 +251,7 @@ border-radius:  0 0 10px 10px;
     }
     .tabs button:focus{
         background-color:rgb(237, 231, 231);
+        font-weight: normal;
     }
     .tab1div{
         padding: 20px 20px 20px 20px;
@@ -301,25 +302,43 @@ border-radius:  0 0 10px 10px;
         font-size: 17px;
     }
     .work{
-        margin-top: 500px;
+        margin-top: 420px;
     }
     .workAt{
-        font-size: 1em;
+        padding: 30px;
+        width: 100vw;
+        font-size: 1.3em;
+        
     }
 
     .workAt1 button{
-        width: 50px;
+        font-size: 0.7em;
+        width: 130px;
+    }
+    .about1{
+        margin-bottom: 100px;
     }
     .about1 h1{
         margin-top: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        justify-content: center;
     }
     .about{
         flex-direction: column;
-
+        justify-content: center;
+        text-align: center;
     }
+    .about1 img{
+        margin-top: 200px;
+    }
+    .about p{
+        margin-bottom: 40px;
+    }
+
+    
     .left{
         width: 80vw;
+        height: 83vh;
     }
     .left img{
         width: 80vw;
@@ -327,8 +346,10 @@ border-radius:  0 0 10px 10px;
     }
     .right{
         width: 80vw;
+        height: 83vh;
     }
     .right img{
         width: 80vw;
     }
+    
 }
