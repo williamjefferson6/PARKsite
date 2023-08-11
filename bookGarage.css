@@ -174,9 +174,17 @@ main {
     display: flex;
     flex-direction: column;
 }
+.myform .field{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 .myform button {
     margin-top: 20px;
     width: 100px;
     padding: 0;
+    margin-left:0;
+}
+@media (max-width:900){
+
 }
