@@ -2,7 +2,8 @@ function showVehicle() {
     var oldContent = document.getElementById('form');
     oldContent.textContent = "";
     var newDiv = document.createElement('div');
-    newDiv.innerHTML = `<h2>Vehicle Owner Form</h2>
+    newDiv.innerHTML = `<br><br>
+                        <h2>Vehicle Owner Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
                             <input class="field" required>
@@ -25,7 +26,7 @@ function showVehicle() {
                             <br>
                             <input type="submit" class="submit"></input>
                         </div>
-                        <br><br><br>`;
+                        <br>`;
     oldContent.appendChild(newDiv);
 }
 
@@ -33,7 +34,8 @@ function showGarage() {
     var oldContent = document.getElementById('form');
     oldContent.textContent = "";
     var newDiv = document.createElement('div');
-    newDiv.innerHTML = `<h2>Garage Owner Form</h2>
+    newDiv.innerHTML = `<br><br>
+                        <h2>Garage Owner Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
                             <input class="field" required>
@@ -56,7 +58,7 @@ function showGarage() {
                             <br>
                             <input type="submit" class="submit"></input>
                         </div>
-                        <br><br><br>`;
+                        <br>`;
     oldContent.appendChild(newDiv);
 }
 
@@ -64,7 +66,8 @@ function showSuper() {
     var oldContent = document.getElementById('form');
     oldContent.textContent = "";
     var newDiv = document.createElement('div');
-    newDiv.innerHTML = `<h2>Supervisor Form</h2>
+    newDiv.innerHTML = `<br><br>
+                        <h2>Supervisor Form</h2>
                         <div class="form">
                             <label>Full Name: </label>
                             <input class="field" required>
@@ -79,6 +82,6 @@ function showSuper() {
                             <br>
                             <input type="submit" class="submit"></input>
                         </div>
-                        <br><br><br>`;
+                        <br>`;
     oldContent.appendChild(newDiv);
 }
