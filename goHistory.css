@@ -116,67 +116,73 @@ main {
 }
 .window {
     width: 75vw;
-    /* background-color: cadetblue; */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
     border-left: 3px solid #8bc052;
-}
-
-.qq {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.lala {
-    width: 290px;
-    height: 40px;
-    border: 2px solid;
-    border-color: #8bc052;
+.window p {
+    margin-top: 10px;
+    font-size: 50px;
+}
+/* .............................................. */
+.outer-wrapper {
+    padding: 30px;
     border-radius: 5px;
-    margin-left: 10px;
-    justify-content: center;
-    align-items: center;
+    width: 70vw;
+    height: 600px;
 }
-
-/* ..................form.................. */
-
-.form label {
-    font-size: 1.2rem;
-    padding: 10px 0px;
-    width: 100%;
-    text-align: start;
-}
-
-.field {
-    width: 250px;
-    height: 3rem;
-    border-radius: 5px;
-    box-shadow: none;
-    outline: none;
-}
-
-.field:focus {
-    border: 3px solid #9ed368;
-}
-
-.submit {
-    width: 8rem;
-    border: none;
+.table-wrapper {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 500px;
+    margin-top: 22px;
+    margin: 15px;
+    padding-bottom: 20px;
     border-radius: 10px;
-    font-size: 20px;
-    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-spacing: 0px;
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    width: 60vw;
     background-color: #9ed368;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
 }
 
-.submit:hover {
-    background-color: #8bc052;
+table th,
+table td {
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+table tr:nth-child(2n + 0) {
+    background-color: rgb(250, 250, 231);
+}
+table tr:nth-child(2n + 1) {
+    background-color: rgb(255, 255, 255);
 }
 
-/* ..................form.................. */
+tr {
+    height: 62px;
+}
+table td {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+/* ..................................................... */
 
 @media (min-width: 352px) and (max-width: 650px) {
     main {
@@ -200,6 +206,7 @@ main {
     .side-bar {
         width: 100vw;
         border-right: 0px solid #8bc052;
+        margin-top: 60px;
     }
     .window {
         width: 100vw;
@@ -210,21 +217,29 @@ main {
         border-left: 0px solid #8bc052;
         margin-top: 50px;
     }
-    .dropdown {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
+    .window p {
+        font-size: 30px;
+        margin-bottom: 15px;
         margin-top: 0;
     }
-    .lala {
-        margin-bottom: 20px;
-        width: 60vw;
-        margin-left: 0px;
+    .outer-wrapper {
+        padding: 30px;
+        border-radius: 5px;
+        width: 100vw;
+        height: 600px;
+    }
+    table th {
+        font-size: 1.1rem;
+    }
+    table td {
+        font-size: 1rem;
+    }
+    tr {
+        height: 42px;
     }
 }
 
-@media (min-width: 651px) and (max-width: 1250px) {
+@media (min-width: 651px) and (max-width: 1200px) {
     .side-bar-options {
         margin-bottom: 30px;
         background-color: #9ed368;
@@ -235,13 +250,6 @@ main {
         height: 5vh;
         font-size: 1rem;
     }
-    .dropdown {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-    }
     .mother-div {
         height: 700px;
     }
@@ -250,5 +258,8 @@ main {
     }
     .window {
         width: 70vw;
+    }
+    .window p {
+        font-size: 30px;
     }
 }
