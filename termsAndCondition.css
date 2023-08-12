@@ -81,5 +81,21 @@ main {
 }
 
 .termsAndCOnds {
-    padding: 50px;
+    padding: 90px;
+}
+
+.termsAndCOnds p {
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+    .termsAndCOnds {
+        padding: 20px;
+    }
+
+    .termsAndCOnds p {
+        margin-left: 25px;
+        font-size: 15px;
+    }
 }
