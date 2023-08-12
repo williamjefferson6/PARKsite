@@ -63,12 +63,16 @@ main{
 }
 
 .sidebtn{
-    width: 20vw;
-    height: 5vh;
+    width: 18vw;
+    height: 15vh;
     background-color: #9ed368;
     border: none;
     border-radius: 10px;
     font-size: 1.5rem;
+}
+
+.sidebtn img{
+    width: 60px;
 }
 
 .sidebtn:hover{
@@ -228,9 +232,10 @@ main{
     }
 
     .sidebtn{
-        width: 80%;
+        width: 15vw;
         font-size: 1.2rem;
     }
+
 
     .content{
         margin-left: 20vw;
@@ -245,20 +250,20 @@ main{
 
     .sidebar{
         width: 100vw;
-        height: 60vh;
+        height: 80vh;
         border: none;
     }
 
     .content{
         margin-left: 0px;
-        margin-top: 60vh;
+        margin-top: 80vh;
         border: none;
         width: 100vw;
         height: 120vh;
     }
 
     .sidebtn{
-        width: 60vw;
+        width: 40vw;
         font-size: 1.2rem;
     }
 
@@ -331,6 +336,10 @@ main{
         flex-direction: column;
         height: 160vh;
         justify-content: space-evenly;
+    }
+
+    .sidebtn{
+        width: 50vw;
     }
 
     .cardX{
