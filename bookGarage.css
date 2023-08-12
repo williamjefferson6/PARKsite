@@ -72,16 +72,21 @@ main {
     margin-top: 80px;
     margin-bottom: 0px;
 }
-
 .side-bar-options {
-    margin-bottom: 30px;
+    width: 18vw;
+    height: 15vh;
     background-color: #9ed368;
-    border-radius: 5px;
-    border: 2px solid #9ed368;
-    margin-left: 10px;
-    width: 20vw;
-    height: 5vh;
+    border: none;
+    border-radius: 10px;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-bar-options img {
+    width: 60px;
 }
 
 .side-bar-options:hover {
@@ -89,7 +94,6 @@ main {
     color: black;
     border: 2px solid #8bc052;
 }
-
 .side-bar {
     display: flex;
     align-items: center;
@@ -98,7 +102,6 @@ main {
     width: 25vw;
     border-right: 3px solid #8bc052;
 }
-
 .window {
     width: 75vw;
     /* background-color: cadetblue; */
@@ -216,7 +219,7 @@ main {
     padding: 0;
 }
 
-@media (min-width:300px) and (max-width: 449px) {
+@media (min-width: 300px) and (max-width: 449px) {
     main {
         background-image: url(images/back-signupMobile.jpg);
         background-size: cover;
@@ -228,15 +231,18 @@ main {
         display: flex;
         flex-direction: column;
         margin-bottom: 0px;
-        height: 900px;
+        height: 1200px;
     }
 
     .side-bar-options {
-        width: 60vw;
-        height: 30px;
+        width: 70vw;
+        height: 80px;
         font-size: 1rem;
-        margin-bottom:0px;
-        margin-top:20px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .side-bar-options img {
+        width: 40px;
     }
 
     .side-bar {
@@ -269,14 +275,13 @@ main {
     .haha {
         width: 300px;
     }
-    .logos img{
-        width:60px;
+    .logos img {
+        width: 60px;
         height: 60px;
     }
-
 }
 
-@media (min-width: 450px) and (max-width:799px) {
+@media (min-width: 450px) and (max-width: 799px) {
     main {
         background-image: url(images/back-signupMobile.jpg);
         background-size: cover;
@@ -288,15 +293,18 @@ main {
         display: flex;
         flex-direction: column;
         margin-bottom: 0px;
-        height: 1000px;
+        height: 1200px;
     }
 
     .side-bar-options {
-        width: 60vw;
-        height: 60px;
+        width: 70vw;
+        height: 90px;
         font-size: 1.5rem;
         margin-bottom: 0px;
-        margin-top:25px;
+        margin-top: 25px;
+    }
+    .side-bar-options img {
+        width: 40px;
     }
 
     .side-bar {
@@ -331,7 +339,7 @@ main {
     }
 }
 
-@media (min-width:800px) and (max-width: 1150px) {
+@media (min-width: 800px) and (max-width: 1150px) {
     .side-bar {
         width: 30vw;
     }
