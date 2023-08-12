@@ -104,7 +104,7 @@ main{
     margin-bottom: 100px;
 }
 .bar{
-    width: 70vw;
+    width: 60vw;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -122,19 +122,13 @@ main{
     margin-left: 20px;
     padding-top: 3px;
 }
-.bar11{
-    display: block;
-}
-.bar11 p{
-    display: inline-block;
-}
-.bar12 p{
-    display: inline-block;
-}
+
 .bar12{
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 .bar2{
+    margin-left: 12vw;
     padding-top: 3px;
 }
 .bar3 button{
@@ -174,19 +168,25 @@ main{
         width: 100vw;
     }
     .bar{
-        width: 90vw;
+        width: 97vw;
         justify-content: space-between;
         height: 200px;
     }
     .bar p{
         display: block;
     }
+    .bar12{
+        flex-direction: column;
+    }
     .bar1{
         margin-top: 30px;
+        display: block;
         
     }
     .bar2{
-        margin-top: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+        display: block;
     }
     .bar3{
         width: 110px;
@@ -194,7 +194,7 @@ main{
     }
     .bar3 button{
         margin-bottom: 10px;
-        margin-right: 0;
+        margin-right: 0px;
         margin-top: 50px;
     }
     .bar3 img{
