@@ -72,6 +72,7 @@ main {
     margin-top: 80px;
     margin-bottom: 0px;
 }
+
 .side-bar-options {
     margin-bottom: 30px;
     background-color: #9ed368;
@@ -82,11 +83,13 @@ main {
     height: 5vh;
     font-size: 1.5rem;
 }
+
 .side-bar-options:hover {
     background-color: #8bc052;
     color: black;
     border: 2px solid #8bc052;
 }
+
 .side-bar {
     display: flex;
     align-items: center;
@@ -95,6 +98,7 @@ main {
     width: 25vw;
     border-right: 3px solid #8bc052;
 }
+
 .window {
     width: 75vw;
     /* background-color: cadetblue; */
@@ -104,6 +108,7 @@ main {
     flex-direction: column;
     border-left: 3px solid #8bc052;
 }
+
 .logos {
     width: 600px;
     display: flex;
@@ -114,6 +119,7 @@ main {
     border-radius: 15px;
     background-color: white;
 }
+
 .logos button {
     background-color: transparent;
     box-shadow: none;
@@ -121,17 +127,21 @@ main {
     background-color: #b4bdb1;
     border-radius: 50px;
 }
+
 .logos img {
     width: 100px;
     height: 100px;
 }
+
 .logos button:hover {
     background-color: #9ed368;
     transition: 1s ease-in-out;
 }
+
 .logos button:focus {
     background-color: #9ed368;
 }
+
 .haha {
     width: 600px;
     height: 450px;
@@ -140,10 +150,12 @@ main {
     padding: 20px;
     background-color: white;
 }
+
 .search-div {
     display: flex;
     margin-bottom: 10px;
 }
+
 .haha button {
     width: 100px;
     height: 40px;
@@ -157,6 +169,7 @@ main {
     border: 2px solid #9ed368;
     margin-left: 10px;
 }
+
 .field {
     padding: 5px;
     border: 2px solid #8bc052;
@@ -169,10 +182,12 @@ main {
     width: 20px;
     height: 20px;
 }
+
 .haha button:hover {
     background-color: #8bc052;
     border: 2px solid #8bc052;
 }
+
 .myform {
     display: flex;
     flex-direction: column;
@@ -183,17 +198,158 @@ main {
     width: 100px;
     padding: 0;
 }
+
 .content p {
     font-size: 30px;
 }
+
 .content {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
+
 .myform button {
     margin-top: 20px;
     margin-left: 0;
     width: 100px;
     padding: 0;
+}
+
+@media (min-width:300px) and (max-width: 449px) {
+    main {
+        background-image: url(images/back-signupMobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mother-div {
+        width: 100vw;
+        margin-top: 75px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        height: 900px;
+    }
+
+    .side-bar-options {
+        width: 60vw;
+        height: 30px;
+        font-size: 1rem;
+        margin-bottom:0px;
+        margin-top:20px;
+    }
+
+    .side-bar {
+        border: none;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .window {
+        border-left: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .content {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos {
+        width: 300px;
+    }
+
+    .haha {
+        width: 300px;
+    }
+    .logos img{
+        width:60px;
+        height: 60px;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width:799px) {
+    main {
+        background-image: url(images/back-signupMobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mother-div {
+        width: 100vw;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        height: 1000px;
+    }
+
+    .side-bar-options {
+        width: 60vw;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+        margin-top:25px;
+    }
+
+    .side-bar {
+        border: none;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .window {
+        border-left: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .content {
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos {
+        width: 400px;
+    }
+
+    .haha {
+        width: 400px;
+    }
+}
+
+@media (min-width:800px) and (max-width: 1150px) {
+    .side-bar {
+        width: 30vw;
+    }
+
+    .side-bar-options {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .window {
+        width: 70vw;
+    }
+
+    .logos {
+        width: 400px;
+    }
+
+    .haha {
+        width: 400px;
+    }
 }
