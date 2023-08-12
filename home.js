@@ -44,11 +44,11 @@ function viewParking(){
     <input
         type="text" placeholder="Enter Desired Location">
     <br>
-    <button
-        class="tab1button1"
-        >Search</button>
-    <button
-    class="tab1button2">Sign Up</button>
+    <a href="signup.html"><button
+                                class="tab1button1"
+                                >Search</button></a>
+                            <a href="signup.html"><button
+                                class="tab1button2">Sign Up</button></a>
 </div>
     `;
     oldContent.appendChild(newDiv);

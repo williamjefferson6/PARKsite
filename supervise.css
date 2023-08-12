@@ -35,7 +35,7 @@
     border-radius: 30px;
     border: 2px solid #9ed368;
     margin-left: 10px;
-    width: 90px;
+    width: 70px;
     height: 40px;
     
 }
@@ -48,7 +48,7 @@
 }
 
 .btn2{
-    width: 70px;
+    width: 120px;
     height: 40px;
     border: 2px solid;
     border-color: #8bc052;
@@ -78,12 +78,15 @@ main{
 }
 
 .sidebtn{
-    width: 20vw;
-    height: 5vh;
+    width: 18vw;
+    height: 15vh;
     background-color: #9ed368;
     border: none;
     border-radius: 10px;
     font-size: 1.5rem;
+}
+.sidebtn img{
+    width: 60px;
 }
 
 .sidebtn:hover{
@@ -161,10 +164,16 @@ main{
     .sidebtn{
         margin-top: 10px;
         width: 40vw;
+        height: 10vh;
+        
         font-size: 1rem;
         
     }
+    .sidebtn img{
+        width: 10vw;
+    }
     .innercont{
+        margin-top: 100px;
         width: 100vw;
     }
     .bar{
