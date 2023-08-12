@@ -248,7 +248,7 @@ main {
     }
 
     .field {
-        width: 300px;
+        width: 200px;
         height: 2rem;
         border-radius: 5px;
     }
@@ -265,6 +265,10 @@ main {
     }
     .dropdown {
         margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .myBtn {
         margin-bottom: 0;
