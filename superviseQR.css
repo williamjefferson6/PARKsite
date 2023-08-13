@@ -67,6 +67,7 @@ main{
     height: 60vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
