@@ -89,6 +89,21 @@ main{
     width: 12vw;
     border-radius: 12px;
 }
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width:600px){
     .acard{
         width: 95vw;

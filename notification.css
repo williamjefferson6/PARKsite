@@ -143,6 +143,20 @@ main{
     padding-top: 3px;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media  (max-width:600px) {
     main{
         margin-top: 0px;

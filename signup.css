@@ -153,6 +153,20 @@ main{
     background-color: rgb(229, 220, 220);
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1200px){
     #form{
         width: 50vw;

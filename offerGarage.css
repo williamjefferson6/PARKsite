@@ -201,6 +201,20 @@ main {
     background-color: #8bc052;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 /* ..................form.................. */
 
 @media (min-width: 350px) and (max-width: 719px) {

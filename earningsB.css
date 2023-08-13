@@ -244,6 +244,20 @@ main{
     font-size: 1.3rem;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1560px){
     .sidebar{
         width: 20vw;

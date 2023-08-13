@@ -139,6 +139,20 @@ main {
     width: 40px;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media (max-width: 1200px) {
     .acard {
         width: 80vw;

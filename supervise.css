@@ -152,6 +152,21 @@ main{
 .bar3 img{
     border-radius: 0 10px 10px 0;
 }
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media  (max-width:600px) {
     main{
         margin-top: 0px;

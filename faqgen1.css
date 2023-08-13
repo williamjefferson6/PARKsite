@@ -111,6 +111,20 @@ main {
     height: 35vh;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1200px){
     .video video{
         width: 50vw;
