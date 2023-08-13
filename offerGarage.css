@@ -61,6 +61,10 @@ main {
     border-radius: 30px;
     margin-left: 10px;
 }
+
+.btn2:hover{
+    background-color: #9ed368;
+}
 /*..................header & footer..................*/
 
 /*..................dropdown button..................*/

@@ -30,17 +30,32 @@
     color: #8bc052;
 }
 
-.btn2{
-    width: 90px;
+.btn1 {
+    background-color: #9ed368;
+    border-radius: 30px;
+    border: 2px solid #9ed368;
+    margin-left: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.btn1:hover {
+    background-color: #8bc052;
+    color: black;
+    border: 2px solid #8bc052;
+}
+
+.btn2 {
+    width: 120px;
     height: 40px;
     border: 2px solid;
     border-color: #8bc052;
     border-radius: 30px;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 .btn2:hover{
-    background-color: #8bc052;
+    background-color: #9ed368;
 }
 
 main{
