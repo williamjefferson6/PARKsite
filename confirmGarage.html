@@ -44,15 +44,15 @@
             <p><b>Address:</b><br> House no. 22, Road no. 4/A, Block C, Uttara, Dhaka, Bangladesh-1230</p>
             <p><b>Parking for:</b><br>Car</p>
             <p><b>Renting Time:</b><br>1:00pm - 3:00pm</p>
-            <div class="orientation"><button class="btn1">Confirm</button><a
+            <div class="orientation"><button class="btn1" onclick="openPopup()">Confirm</button><a
                     href="availableGarage.html"><button class="btn2" style="width:85px;">Go Back</button></a></div>
-            <div class="popup">
+            <div class="popup" id="popup">
                 <img src="images/yes-unscreen.gif" alt="">
                 <h3>Thank You!</h3>
                 <p>Your booking has been successful!</p>
-                <button type="button">OK</button>
+                <button type="button" onclick="closePopup()">OK</button>
             </div>
-            <!-- <script>
+            <script>
                 let popup = document.getElementById("popup");
                 function openPopup() {
                     popup.classList.add(".open-popup");
@@ -61,7 +61,7 @@
                 function closePopup() {
                     popup.classList.remove(".open-popup");
                 } 
-            </script> -->
+            </script>
         </div>
     </main>
     <footer class="text-center text-lg-start text-white bg-dark">
