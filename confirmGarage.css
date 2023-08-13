@@ -1,8 +1,5 @@
 main {
-    /* background-image: url(images/back-signup.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
-    width:99vw;
+    width: 100vw;
     height: 900px;
     display: flex;
     justify-content: center;
@@ -69,65 +66,41 @@ main {
 .btn2:hover {
     background-color: #8bc052;
 }
-.acard{
+.acard {
     margin-top: 90px;
     display: flex;
     flex-direction: column;
     width: 27vw;
     height: 70vh;
     border-radius: 15px;
-    background-color:white;
+    background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     padding: 15px;
 }
-.acard img{
+.acard img {
     width: 500px;
     border-radius: 15px;
 }
-.acard h2{
+.acard h2 {
     margin-top: 10px;
     margin-bottom: 18px;
 }
-.acard p{
+.acard p {
     font-size: 18px;
 }
-.orientation{
+.orientation {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.popup{
-    width: 400px;
-    background-color: white;
-    border-radius:6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color:#333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-}
-.popup img{
-    width:110px;
-    margin-top: -50px;
-    border-radius:80%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-.popup h3{
+
+.booba h3 {
     font-size: 40px;
     font-weight: 500;
     margin: 30px 0 10px;
 }
-.popup button{
-    width:100%;
+.booba button {
+    width: 100%;
     margin-top: 50px;
     padding: 10px 0;
     background: #8bc052;
@@ -137,28 +110,54 @@ main {
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
-@media (max-width:1200px){
-    .acard{
+
+.booba img {
+    width: 40px;
+    margin-top: -50px;
+    border-radius: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_img {
+    width: 40px;
+}
+
+@media (max-width: 1200px) {
+    .acard {
         width: 80vw;
         height: 75vh;
     }
-    .acard img{
+    .acard img {
         width: 600px;
     }
 }
-@media (max-width:600px){
-    .acard{
+@media (max-width: 600px) {
+    .acard {
         width: 80vw;
         height: 550px;
-        margin:0px;
+        margin: 0px;
     }
-    .acard img{
+    .acard img {
         width: 245px;
-
     }
-    main{
+    main {
         height: 800px;
     }
 }

@@ -8,7 +8,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <link rel="stylesheet" href="confirmGarage.css" />
 
-    <title>sample</title>
+    <title>Confirm Booking</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -44,24 +45,34 @@
             <p><b>Address:</b><br> House no. 22, Road no. 4/A, Block C, Uttara, Dhaka, Bangladesh-1230</p>
             <p><b>Parking for:</b><br>Car</p>
             <p><b>Renting Time:</b><br>1:00pm - 3:00pm</p>
-            <div class="orientation"><button class="btn1" onclick="openPopup()">Confirm</button><a
-                    href="availableGarage.html"><button class="btn2" style="width:85px;">Go Back</button></a></div>
-            <div class="popup" id="popup">
-                <img src="images/yes-unscreen.gif" alt="">
-                <h3>Thank You!</h3>
-                <p>Your booking has been successful!</p>
-                <button type="button" onclick="closePopup()">OK</button>
+            <div class="orientation">
+                <button type="button" class="btn btn-primary btn1" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Confirm
+                </button>
+                <a href="availableGarage.html"><button class="btn2" style="width:85px;">Go Back</button></a>
             </div>
-            <script>
-                let popup = document.getElementById("popup");
-                function openPopup() {
-                    popup.classList.add(".open-popup");
-                }
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header booba-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><img style="width: 90px;"
+                                    class="popup_img" src="images/yes-unscreen.gif" alt="">
+                            </h1>
 
-                function closePopup() {
-                    popup.classList.remove(".open-popup");
-                } 
-            </script>
+                        </div>
+                        <div class="modal-body myBody">
+                            <h3>Thank You</h3>
+                            <p>Your Booking Has Been Successful</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class=" btn2" data-bs-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <footer class="text-center text-lg-start text-white bg-dark">
