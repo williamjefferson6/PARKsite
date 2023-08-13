@@ -6,7 +6,8 @@ function viewGarage(){
     <h1>Rent your garage now and start earning extra!</h1>
     <p style="margin-bottom:0px;">Get the best out of your unused garages!</p>
     <br>
-    <button>Sign Up</button>
+    <a href="signup.html"><button
+                                class="tab2button2">Sign Up</button></a>
 </div>
     `;
     oldContent.appendChild(newDiv);
@@ -63,7 +64,8 @@ function viewSuper(){
                             <h1>Earn more by ensuring security</h1>
                             <p>Sign up to earn extra by guarding garages!</p>
                             <br>
-                            <button>Sign Up</button>
+                            <a href="signup.html"><button
+                                class="tab3button2">Sign Up</button></a>
                         </div>
     `;
     oldContent.appendChild(newDiv);
