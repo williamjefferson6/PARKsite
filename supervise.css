@@ -57,6 +57,9 @@
     
 }
 
+.btn2:hover {
+    background-color: #8bc052;
+}
 
 main{
     margin-left: 0px;
