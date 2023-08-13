@@ -128,6 +128,19 @@ main{
     margin-left: 20px;
     padding-top: 3px;
 }
+.startbook{
+    margin-right: 100px;
+        height: 40px;
+        border: none;
+        border-radius: 50px;
+        background-color: #9ed368;
+        width: 120px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.starbook:hover{
+    background-color: #8bc052;
+}
 
 .bar12{
     display: flex;
@@ -137,16 +150,16 @@ main{
     margin-left: 12vw;
     padding-top: 3px;
 }
-.bar3 button{
+.endbook{
     margin-right: 100px;
         height: 40px;
         border: none;
         border-radius: 50px;
         background-color: rgb(250, 64, 64);
-        width: 100px;
+        width: 120px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-.bar3 button:hover{
+.endbook:hover{
     background-color:rgb(204, 13, 13) ;
 }
 .bar3 img{
