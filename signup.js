@@ -24,7 +24,7 @@ function showVehicle() {
                             <label>Vehicle Model: </label>
                             <input class="field" required>
                             <br>
-                            <input type="submit" class="submit"></input>
+                            <a href="home.html"><input type="submit" class="submit"></input></a>
                         </div>
                         <br>`;
     oldContent.appendChild(newDiv);
@@ -56,7 +56,7 @@ function showGarage() {
                             <label>Supervisor National ID: </label>
                             <input class="field" required>
                             <br>
-                            <input type="submit" class="submit"></input>
+                            <a href="home.html"><input type="submit" class="submit"></input></a>
                         </div>
                         <br>`;
     oldContent.appendChild(newDiv);
@@ -80,7 +80,7 @@ function showSuper() {
                             <label>Phone Number: </label>
                             <input class="field" required>
                             <br>
-                            <input type="submit" class="submit"></input>
+                            <a href="home.html"><input type="submit" class="submit"></input></a>
                         </div>
                         <br>`;
     oldContent.appendChild(newDiv);
