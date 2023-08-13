@@ -204,6 +204,20 @@ table td {
     font-size: 1.2rem;
     padding-left: 20px;
 }
+
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
 /* ..................................................... */
 
 @media (min-width: 352px) and (max-width: 650px) {

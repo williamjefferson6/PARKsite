@@ -219,6 +219,20 @@ main {
     padding: 0;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media (min-width: 300px) and (max-width: 449px) {
     main {
         background-image: url(images/back-signupMobile.jpg);

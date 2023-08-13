@@ -113,6 +113,20 @@ main button:hover{
     }
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 690px){
     main h1{
         width: 80vw;

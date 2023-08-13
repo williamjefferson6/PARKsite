@@ -89,6 +89,20 @@ main {
     font-size: 20px;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media (min-width: 350px) and (max-width: 600px) {
     .termsAndCOnds {
         padding: 20px;

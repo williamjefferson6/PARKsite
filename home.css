@@ -222,6 +222,20 @@ border-radius:  0 0 10px 10px;
     font-size: 20px;
 }
 
+.links{
+    color: white;
+    text-decoration: none;
+}
+
+.links:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width:600px) { 
     .bannerCard{
         width: 99vw;
