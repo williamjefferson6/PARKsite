@@ -62,7 +62,7 @@ main {
     margin-left: 10px;
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: #9ed368;
 }
 /*..................header & footer..................*/
@@ -201,21 +201,66 @@ main {
     background-color: #8bc052;
 }
 
-.links{
+.links {
     color: white;
     text-decoration: none;
 }
 
-.links:visited{
+.links:visited {
     color: white;
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     text-decoration: underline;
 }
 
 /* ..................form.................. */
+
+.booba h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.booba button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #8bc052;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.booba img {
+    width: 40px;
+    margin-top: -50px;
+    border-radius: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_img {
+    width: 90px;
+}
 
 @media (min-width: 350px) and (max-width: 719px) {
     main {

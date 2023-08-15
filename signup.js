@@ -1,7 +1,7 @@
 function showVehicle() {
-    var oldContent = document.getElementById('form');
+    var oldContent = document.getElementById("form");
     oldContent.textContent = "";
-    var newDiv = document.createElement('div');
+    var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Vehicle Owner Form</h2>
                         <div class="form">
@@ -31,9 +31,9 @@ function showVehicle() {
 }
 
 function showGarage() {
-    var oldContent = document.getElementById('form');
+    var oldContent = document.getElementById("form");
     oldContent.textContent = "";
-    var newDiv = document.createElement('div');
+    var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Garage Owner Form</h2>
                         <div class="form">
@@ -63,9 +63,9 @@ function showGarage() {
 }
 
 function showSuper() {
-    var oldContent = document.getElementById('form');
+    var oldContent = document.getElementById("form");
     oldContent.textContent = "";
-    var newDiv = document.createElement('div');
+    var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Supervisor Form</h2>
                         <div class="form">
