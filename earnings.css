@@ -9,24 +9,24 @@
     -webkit-transform: rotate(360deg);
 }
 
-.container{
+.container {
     align-items: center;
     justify-content: center;
 }
 
-.account{
+.account {
     color: black;
 }
 
-.account:link{
+.account:link {
     color: black;
 }
 
-.account:visited{
+.account:visited {
     color: black;
 }
 
-.account:hover{
+.account:hover {
     color: #8bc052;
 }
 
@@ -54,11 +54,11 @@
     margin-left: 10px;
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: #9ed368;
 }
 
-main{
+main {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 80px;
@@ -66,7 +66,7 @@ main{
     width: 99.2vw;
 }
 
-.sidebar{
+.sidebar {
     width: 25vw;
     height: 80vh;
     position: absolute;
@@ -77,7 +77,7 @@ main{
     border-right: 3px solid #8bc052;
 }
 
-.sidebtn{
+.sidebtn {
     width: 18vw;
     height: 15vh;
     background-color: #9ed368;
@@ -86,15 +86,15 @@ main{
     font-size: 1.5rem;
 }
 
-.sidebtn img{
+.sidebtn img {
     width: 60px;
 }
 
-.sidebtn:hover{
+.sidebtn:hover {
     background-color: #8bc052;
 }
 
-.content{
+.content {
     margin-left: 25vw;
     border-left: 3px solid #8bc052;
     width: 75vw;
@@ -105,7 +105,7 @@ main{
     justify-content: center;
 }
 
-.rowX{
+.rowX {
     width: 95%;
     height: 47%;
     display: flex;
@@ -113,7 +113,7 @@ main{
     align-items: center;
 }
 
-.cardX{
+.cardX {
     width: 45%;
     height: 90%;
     border: 5px solid #8bc052;
@@ -124,7 +124,7 @@ main{
     justify-content: space-evenly;
 }
 
-.cardhead{
+.cardhead {
     height: 30%;
     display: flex;
     flex-direction: column;
@@ -132,18 +132,18 @@ main{
     text-align: center;
 }
 
-.cardhead img{
+.cardhead img {
     width: 60px;
 }
 
-.cardtxt{
+.cardtxt {
     width: 95%;
     height: 45%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.time{
+.time {
     background-image: linear-gradient(to top right, #8bc052, #9ed368, #8bc052);
     width: 22%;
     height: 100%;
@@ -154,7 +154,7 @@ main{
     border-radius: 5px;
 }
 
-.timeimg{
+.timeimg {
     width: 30%;
     overflow: hidden;
     transition-duration: 0.5s;
@@ -166,12 +166,12 @@ main{
     -webkit-transform: rotate(360deg);
 }
 
-.time p{
+.time p {
     height: 10%;
     font-weight: 500;
 }
 
-.cardtxt10{
+.cardtxt10 {
     width: 95%;
     height: 45%;
     display: flex;
@@ -179,7 +179,7 @@ main{
     align-items: center;
 }
 
-.totalimg{
+.totalimg {
     width: 11%;
     height: 40%;
     overflow: hidden;
@@ -192,14 +192,14 @@ main{
     -webkit-transform: rotate(360deg);
 }
 
-.totaltxt{
+.totaltxt {
     height: 20%;
     padding-left: 20px;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.cardtxt11{
+.cardtxt11 {
     width: 95%;
     height: 45%;
     display: flex;
@@ -207,7 +207,7 @@ main{
     align-items: center;
 }
 
-.totaltxt2{
+.totaltxt2 {
     padding-left: 20px;
     padding-right: 30px;
     height: 15%;
@@ -215,17 +215,17 @@ main{
     font-size: 1.5rem;
 }
 
-.totalimg2{
+.totalimg2 {
     width: 11%;
     height: 40%;
 }
 
-.totalimg3{
+.totalimg3 {
     width: 11%;
     height: 40%;
 }
 
-.totaltxt3{
+.totaltxt3 {
     padding-left: 20px;
     padding-right: 30px;
     height: 65%;
@@ -233,7 +233,7 @@ main{
     font-size: 1.3rem;
 }
 
-.totaltxt4{
+.totaltxt4 {
     padding-left: 20px;
     padding-right: 30px;
     height: 65%;
@@ -241,49 +241,48 @@ main{
     font-size: 1.3rem;
 }
 
-.links{
+.links {
     color: white;
     text-decoration: none;
 }
 
-.links:visited{
+.links:visited {
     color: white;
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1560px){
-    .sidebar{
+@media screen and (max-width: 1560px) {
+    .sidebar {
         width: 20vw;
     }
 
-    .sidebtn{
+    .sidebtn {
         width: 15vw;
         font-size: 1.2rem;
     }
 
-
-    .content{
+    .content {
         margin-left: 20vw;
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 1460px){
-    main{
+@media screen and (max-width: 1460px) {
+    main {
         flex-direction: column;
     }
 
-    .sidebar{
+    .sidebar {
         width: 100vw;
         height: 80vh;
         border: none;
     }
 
-    .content{
+    .content {
         margin-left: 0px;
         margin-top: 80vh;
         border: none;
@@ -291,157 +290,154 @@ main{
         height: 120vh;
     }
 
-    .sidebtn{
+    .sidebtn {
         width: 40vw;
         font-size: 1.2rem;
     }
 
-    .rowX{
+    .rowX {
         height: 60vh;
     }
 
-    .cardX{
+    .cardX {
         height: 90%;
     }
 
-    .cardtxt{
+    .cardtxt {
         margin-top: -80px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .time{
+    .time {
         width: 35%;
         height: 100px;
     }
 
-    .cardtxt10{
+    .cardtxt10 {
         margin-top: -80px;
     }
 
-    .totalimg{
+    .totalimg {
         width: 13%;
         height: 30%;
     }
 
-    .totaltxt{
+    .totaltxt {
         height: 12%;
     }
 
-    .cardtxt11{
+    .cardtxt11 {
         margin-top: -80px;
     }
 
-    .totalimg2{
+    .totalimg2 {
         width: 13%;
         height: 30%;
     }
 
-    .totalimg3{
+    .totalimg3 {
         width: 13%;
         height: 30%;
     }
 
-    .totaltxt2{
+    .totaltxt2 {
         height: 12%;
     }
 
-    .totaltxt3{
+    .totaltxt3 {
         height: 40%;
     }
 
-    .totaltxt4{
+    .totaltxt4 {
         height: 40%;
     }
 }
 
-@media screen and (max-width: 1000px){
-    .content{
+@media screen and (max-width: 1000px) {
+    .content {
         height: 250vh;
         justify-content: space-evenly;
     }
-    .rowX{
+    .rowX {
         flex-direction: column;
         height: 160vh;
         justify-content: space-evenly;
     }
 
-    .sidebtn{
+    .sidebtn {
         width: 50vw;
     }
 
-    .cardX{
+    .cardX {
         width: 60vw;
         height: 45%;
     }
 }
 
-@media screen and (max-width: 700px){
-    .cardX{
+@media screen and (max-width: 700px) {
+    .cardX {
         width: 80vw;
     }
 
-    .totalimg{
+    .totalimg {
         width: 10%;
         height: 20%;
     }
 
-    .totalimg2{
+    .totalimg2 {
         width: 10%;
         height: 20%;
     }
 
-    .totalimg3{
+    .totalimg3 {
         width: 10%;
         height: 20%;
     }
 }
 
-@media screen and (max-width: 450px){
-    .sidebtn{
+@media screen and (max-width: 450px) {
+    .sidebtn {
         width: 80vw;
     }
 
-    .cardX{
+    .cardX {
         width: 90vw;
     }
 
-    .totaltxt{
+    .totaltxt {
         font-size: 1rem;
         height: 5%;
     }
 
-    .totaltxt2{
+    .totaltxt2 {
         font-size: 1rem;
         height: 5%;
     }
 
-    .totaltxt3{
+    .totaltxt3 {
         font-size: 1rem;
         height: 30%;
     }
 
-    .totaltxt4{
+    .totaltxt4 {
         font-size: 1rem;
         height: 30%;
     }
 
-    .totalimg{
+    .totalimg {
         width: 10%;
         height: 15%;
     }
 
-    .totalimg2{
+    .totalimg2 {
         width: 10%;
         height: 15%;
     }
 
-    .totalimg3{
+    .totalimg3 {
         width: 10%;
         height: 15%;
     }
 }
-
-
-
