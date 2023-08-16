@@ -9,107 +9,116 @@
     -webkit-transform: rotate(360deg);
 }
 
-.container{
+.container {
     align-items: center;
     justify-content: center;
 }
 
-.account{
+.account {
     color: black;
 }
 
-.account:link{
+.account:link {
     color: black;
 }
 
-.account:visited{
+.account:visited {
     color: black;
 }
 
-.account:hover{
+.account:hover {
     color: #8bc052;
 }
 
-.btn1{
+.btn1 {
     background-color: #9ed368;
     border-radius: 30px;
     border: 2px solid #9ed368;
     margin-left: 10px;
     width: 90px;
     height: 40px;
-    
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: #8bc052;
     color: black;
     border: 2px solid #8bc052;
-
 }
 
-.btn2{
+.btn2 {
     width: 70px;
     height: 40px;
     border: 2px solid;
     border-color: #8bc052;
     border-radius: 30px;
     margin-left: 10px;
-    
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: #8bc052;
 }
-body{
-    background-image: url('images/back-signup.jpg');
+body {
+    background-image: url("images/back-signup.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-main{
-    margin-top: 100px;
+main {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
     width: 100vw;
-    height: 100vh;
+    height: 109vh;
 }
-.acard{
+.acard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 27vw;
-    height: 70vh;
+    height: 73vh;
     border-radius: 15px;
-    background-color:white;
+    background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-.acard img{
+
+.acard p {
+    font-size: 0.9rem;
+}
+
+.acard h4 {
+    font-size: 1.2rem;
+}
+.acard img {
     width: 12vw;
     border-radius: 12px;
+    margin-bottom: 10px;
 }
 
-.links{
+.links {
     color: white;
     text-decoration: none;
 }
 
-.links:visited{
+.links:visited {
     color: white;
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width:600px){
-    .acard{
-        width: 95vw;
-    height: 92vh;}
-    .acard img{
-        width: 30vw;
-        margin: 20px;
+@media (min-width: 350px) and (max-width: 900px) {
+    main {
+        margin-top: 100px;
+    }
+    .acard {
+        width: 80vw;
+        height: 92vh;
+    }
+    .acard img {
+        width: 60vw;
+        margin-bottom: 5px;
     }
 }

@@ -9,79 +9,76 @@
     -webkit-transform: rotate(360deg);
 }
 
-.container{
+.container {
     align-items: center;
     justify-content: center;
 }
 
-.account{
+.account {
     color: black;
 }
 
-.account:link{
+.account:link {
     color: black;
 }
 
-.account:visited{
+.account:visited {
     color: black;
 }
 
-.account:hover{
+.account:hover {
     color: #8bc052;
 }
 
-.btn1{
+.btn1 {
     background-color: #9ed368;
     border-radius: 30px;
     border: 2px solid #9ed368;
     margin-left: 10px;
     width: 90px;
     height: 40px;
-    
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: #8bc052;
     color: black;
     border: 2px solid #8bc052;
-
 }
 
-.btn2{
+.btn2 {
     width: 70px;
     height: 40px;
     border: 2px solid;
     border-color: #8bc052;
     border-radius: 30px;
     margin-left: 10px;
-    
 }
 
-.btn2:hover{
+.btn2:hover {
     background-color: #8bc052;
 }
 
-main{
+main {
     margin-top: 85px;
     width: 99vw;
-    height: 65vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main img{
+main img {
     width: 10vw;
 }
 
-main h4{
+main h4 {
     width: 60vw;
     text-align: center;
     font-weight: normal;
 }
 
-main button{
+main button {
     background-color: #9ed368;
     border-radius: 30px;
     border: 2px solid #9ed368;
@@ -90,50 +87,53 @@ main button{
     font-size: 1.5rem;
 }
 
-main button:hover{
+main button:hover {
     background-color: #8bc052;
     border-color: #8bc052;
 }
 
-.links{
+.links {
     color: white;
     text-decoration: none;
 }
 
-.links:visited{
+.links:visited {
     color: white;
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px){
-    main img{
+@media screen and (max-width: 1000px) {
+    main img {
         width: 20vw;
     }
 
-    main h1{
+    main h1 {
         font-size: 2rem;
     }
 
-    main h4{
+    main h4 {
         font-size: 1rem;
     }
 
-    main button{
+    main button {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 690px){
-    main h1{
+@media screen and (max-width: 690px) {
+    main h1 {
         width: 80vw;
         text-align: center;
     }
 
-    main h4{
+    main h4 {
         width: 90vw;
+    }
+    main {
+        height: 90vh;
     }
 }

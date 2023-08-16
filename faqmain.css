@@ -37,14 +37,12 @@
     margin-left: 10px;
     width: 90px;
     height: 40px;
-
 }
 
 .btn1:hover {
     background-color: #8bc052;
     color: black;
     border: 2px solid #8bc052;
-
 }
 
 .btn2 {
@@ -54,7 +52,6 @@
     border-color: #8bc052;
     border-radius: 30px;
     margin-left: 10px;
-
 }
 
 .btn2:hover {
@@ -83,7 +80,7 @@ main {
     padding-left: 10vw;
 }
 
-.listX{
+.listX {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -135,52 +132,52 @@ main {
     text-decoration: none;
 }
 
-.links{
+.links {
     color: white;
     text-decoration: none;
 }
 
-.links:visited{
+.links:visited {
     color: white;
     text-decoration: none;
 }
 
-.links:hover{
+.links:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 1200px){
-    main{
+@media screen and (max-width: 1200px) {
+    main {
         height: 160vh;
     }
-    .listX{
-        height: 60vh; 
+    .listX {
+        height: 60vh;
     }
 }
 
-@media screen and (max-width: 800px){
-    main{
+@media screen and (max-width: 800px) {
+    main {
         height: 240vh;
     }
-    .listX{
+    .listX {
         height: 100vh;
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    #tblrone{
+    #tblrone {
         height: 40vh;
         width: 80vw;
     }
 }
 
-@media screen and (max-width: 450px){
-    main{
-        height: 260vh;
+@media screen and (max-width: 450px) {
+    main {
+        height: 270vh;
     }
-    .listX{
+    .listX {
         height: 110vh;
     }
-    #tblrone{
+    #tblrone {
         height: 50vh;
     }
 }
