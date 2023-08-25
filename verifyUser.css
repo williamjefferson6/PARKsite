@@ -115,7 +115,7 @@ main{
     
 }
 .innercont h1{
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .links{
@@ -139,8 +139,8 @@ main{
     height: 600px;
 }
 .table-wrapper {
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow: scroll;
+    overflow-x: hidden;
     height: fit-content;
     max-height: 500px;
     margin-top: 22px;
@@ -149,6 +149,18 @@ main{
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+.table-wrapper::-webkit-scrollbar {
+    width: 0rem; /* Adjust the scrollbar width */
+  }
+  
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .table-wrapper::-webkit-scrollbar-track {
+    background-color:transparent; /* Background color of the scrollbar track */
+  }
 
 table {
     border-spacing: 0px;
@@ -200,17 +212,6 @@ table td {
     text-decoration: underline;
 }
 
-.table-wrapper::-webkit-scrollbar {
-    width: 8px; /* Set the width of the scrollbar for Webkit browsers (like Chrome and Safari) */
-}
-
-.table-wrapper::-webkit-scrollbar-thumb {
-    background-color: #8bc052; /* Set the color of the scrollbar thumb */
-}
-
-.table-wrapper::-webkit-scrollbar-track {
-    background-color: #ddd; /* Set the color of the scrollbar track */
-}
 
 @media  (max-width:600px) {
     main{

@@ -42,11 +42,10 @@
     <br /><br /><br /><br /><br /><br /><br />
 
     <div class="sidebar">
-      <a href="#"><button class="sidebtn"><img src="images/analytics_994170.png" alt=""> <br>View System
-          Statistics</button></a>
-      <a href="#"><button class="sidebtn"><img src="images/authentication_1791961.png" alt=""><br>Verify
-          User</button></a>
-      <a href="#"><button class="sidebtn"><img src="images/pricing_1728450.png" alt=""><br>Edit Price</button></a>
+      <a href="admin.html"><button class="sidebtn"><img src="images/analytics_994170.png" alt=""> <br>View System Statistics</button></a>
+      <a href="verifyUser.html"><button class="sidebtn"><img src="images/authentication_1791961.png" alt=""><br>Verify User</button></a>
+      <a href="editPrice.html"><button class="sidebtn"><img src="images/pricing_1728450.png"
+            alt=""><br>Edit Price</button></a>
       <a href="#"><button class="sidebtn"><img src="images/cheque_2250736.png" alt=""><br>Edit Earnings</button></a>
     </div>
     <div class="content">
