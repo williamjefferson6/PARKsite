@@ -69,7 +69,7 @@ main {
 
 .sidebar {
     width: 25vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -95,8 +95,22 @@ main {
 
 .content {
     width: 74vw;
-    height: 100vh;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+.content::-webkit-scrollbar {
+    width: 0em; /* Adjust the scrollbar width */
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background-color: transparent; /* Background color of the scrollbar track */
+  }
 .innercont {
     display: flex;
     justify-content: center;

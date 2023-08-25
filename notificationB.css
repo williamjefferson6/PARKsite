@@ -9,10 +9,24 @@
     -webkit-transform: rotate(360deg);
 }
 
-.container{
-    align-items: center;
-    justify-content: center;
+.content {
+    width: 74vw;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+.content::-webkit-scrollbar {
+    width: 0em; /* Adjust the scrollbar width */
+  }
+  
+  .content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background-color: transparent; /* Background color of the scrollbar track */
+  }
 
 .account{
     color: black;
