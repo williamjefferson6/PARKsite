@@ -1,3 +1,21 @@
+<?php
+    include 'connection.php';
+    $sql = "SELECT * FROM contact";
+    $result = mysqli_query($conn, $sql);
+
+    $name = array();
+    $phone = array();
+    $email = array();
+    $message = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+        // $tasks[] = $row['To-Do Activity'];
+        $name[]=$row['name'];
+        $phone[]=$row['phone'];
+        $email[]=$row['email'];
+        $message[]=$row['message'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,10 +67,25 @@
         <a href="#"><button class="sidebtn"><img src="images/cheque_2250736.png" alt=""><br>Edit Earnings</button></a>
       </div>
     <div class="content">
-      <div class="innercont">
-        <h1>Resolve</h1>
+        <div class="innercont">
+            <h1>Resolve</h1>
+            <?php
+                for ($i=0;$i<count($name);$i++){
+                    echo '<div class="bar">';
+                    echo '<div class="bar1">';
+                    echo '<p><b>Name:</b> ' . $name[$i] . '</p>';
+                    echo '<p><b>Email:</b> ' . $email[$i] . '</p>';
+                    echo '<p;><b>Phone:</b> ' . $phone[$i] . '</p>';
+                    echo '</div>';
+                    echo ' <div class="bar2">';
+                    echo '<p>' . $message[$i] . '</p>';
+                    echo '</div>';
+                    echo '<button> Resolve</button>';
+                    echo '</div>';
+                }
+            ?>
 
-          <div class="bar">
+          <!-- <div class="bar">
 
             <div class="bar1">
                 <p><b>Name:</b> Preetar Darker</p>
@@ -63,37 +96,12 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis culpa harum optio laborum quis</p>
             </div>
             <button> Resolve</button>
-          </div>
+          </div> -->
 
-          <div class="bar">
-
-            <div class="bar1">
-                <p><b>Name:</b> Preetar Darker</p>
-                <p><b>Email:</b> preda@gmail.com</p>
-                <p><b>Phone:</b> 019800000000</p>
-            </div>
-            <div class="bar2">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis culpa harum optio laborum quis eligendi ratione dolorum? Ducimus quaerat beatae saepe, consequatur vero reprehenderit mollitia ex officiis blanditiis iusto. Dolorum iure voluptatibus placeat repudiandae, distinctio vero dolor eum magni.</p>
-            </div>
-            <button> Resolve</button>
-          </div>
-
-          <div class="bar">
-
-            <div class="bar1">
-                <p><b>Name:</b> Preetar Darker</p>
-                <p><b>Email:</b> preda@gmail.com</p>
-                <p><b>Phone:</b> 019800000000</p>
-            </div>
-            <div class="bar2">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis culpa harum optio laborum quis eligendi ratione dolorum? Ducimus quaerat beatae saepe, consequatur vero reprehenderit mollitia ex officiis blanditiis iusto. Dolorum iure voluptatibus placeat repudiandae, distinctio vero dolor eum magni.</p>
-            </div>
-            <button> Resolve</button>
-          </div>
           
             
 
-      </div>
+        </div>
     </div>
   </main>
   <footer class="text-center text-lg-start text-white bg-dark">

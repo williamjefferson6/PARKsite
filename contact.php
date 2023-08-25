@@ -1,3 +1,18 @@
+<?php
+    $nameX=$_POST['name'];
+    $emailX=$_POST['email'];
+    $phoneX=$_POST['phone'];
+    $messageX=$_POST['message'];
+
+    $conn = mysqli_connect("localhost","root", "" ,"parksite");
+    if($conn === false){
+        die("ERROR: Could not connect." . mysqli_connect_error());
+    }   
+
+    $sql = "INSERT INTO contact (name,email,phone,message) VALUES ( '$nameX', '$emailX','$phoneX','$messageX')";
+    mysqli_query($conn,$sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,20 +45,20 @@
     </div>
     <div class="part2">
         <p class="glow1">Send Us A Message</p>
-        <form action="contact.php" method="POST">
+        <form action="#" method="POST" >
             <label>Name:</label>
             <input type="text" id="name" name="name" placeholder="enter name here" required>
             <br>
             <label>Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <input type="text" id="email" name="email" placeholder="example@email.com" required>
             <br>
             <label>Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="enter 11 digit number" required>
+            <input type="text" id="phone" name="phone" placeholder="enter 11 digit number" required>
             <br>
             
             <textarea id="message" name="message" rows="3" placeholder="tell us your thoughts" required></textarea>
             <br>
-            <!-- <a href="home.html"><button class="submit">Submit</button></a> -->
+            <!-- <a href="home.html"><button class="submit" type="submit">Submit</button></a> -->
             <input class="submit" type="submit" value="submit">
         </form>
     </div>

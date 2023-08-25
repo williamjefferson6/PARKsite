@@ -42,7 +42,7 @@ function edit() {
                                         <button><img class="search-icon src_icn" src="images/search.png" alt=""></button>
                                     </div>
                                     <div id="myform1" class="myform">
-                                        <input type="text" class="field" required>
+                                        
                                         <label>Base Fare</label>
                                         <input type="text" class="field" required>
                                         <label>Hourly Rate</label>
