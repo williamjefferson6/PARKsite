@@ -161,6 +161,8 @@ main {
 
 .search-div {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -184,6 +186,7 @@ main {
     border-radius: 5px;
     height: 40px;
     outline: none;
+    /* margin-bottom: 10px; */
 }
 
 .search-icon {
@@ -223,6 +226,16 @@ main {
     width: 100px;
     padding: 0;
 }
+select {
+    width: 170px;
+}
+
+.myform label {
+    margin-bottom: 10px;
+}
+.myform input {
+    margin-bottom: 10px;
+}
 
 .links {
     color: white;
@@ -251,12 +264,26 @@ main {
         justify-content: center;
         flex-direction: column;
         margin-bottom: 0px;
-        height: 1200px;
+        height: 1400px;
+        margin-top: 70px;
     }
     .search-div {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         margin-bottom: 10px;
+    }
+    .search-div label,
+    select,
+    button {
+        margin-top: 10px;
+    }
+    .search-div button {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    select {
+        width: 150px;
     }
 
     .window p {
@@ -353,6 +380,24 @@ main {
     .haha {
         width: 400px;
     }
+    .search-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .search-div label,
+    select,
+    button {
+        margin-top: 10px;
+    }
+    .search-div button {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    select {
+        width: 150px;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1150px) {
@@ -375,5 +420,23 @@ main {
 
     .haha {
         width: 400px;
+    }
+    .search-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .search-div label,
+    select,
+    button {
+        margin-top: 10px;
+    }
+    .search-div button {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    select {
+        width: 150px;
     }
 }
