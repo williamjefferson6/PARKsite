@@ -53,10 +53,14 @@
                     Earnings</button></a>
         </div>
         <div class="content">
-            <div class="haha">
-                <div class="search-div">
+            <div id="button-class" class="button-class">
+                <button id="Edit" class="btn1" onclick="edit()">Edit Price</button>
+                <button id="Add" class="btn1" onclick="add()">Add Price</button>
+            </div>
+            <div id="haha" class="haha">
+                <div id="search-div" class="search-div">
                     <label>Select City</label>
-                    <select class="field" name="" id="">
+                    <select class="combo-box" name="" id="">
                         <option value="">Dhaka</option>
                         <option value="">Barishal</option>
                         <option value="">Cumilla</option>
@@ -64,7 +68,7 @@
                         <option value="">Lalbag</option>
                     </select>
                     <label>Select Area</label>
-                    <select class="field" name="" id="">
+                    <select class="combo-box" name="" id="">
                         <option value="">Dhaka</option>
                         <option value="">Barishal</option>
                         <option value="">Cumilla</option>
@@ -74,17 +78,16 @@
 
                     <button><img class="search-icon src_icn" src="images/search.png" alt=""></button>
                 </div>
-                <div class="myform">
-                    <label>Check-In Time</label>
-                    <input type="time" class="field" required>
-                    <label>Check-Out Time</label>
-                    <input type="time" class="field" required>
-                    <label>Date</label>
-                    <input type="date" class="field" required>
-
+                <div id="myform1" class="myform">
+                    <input type="text" class="field" required>
+                    <label>Base Fare</label>
+                    <input type="text" class="field" required>
+                    <label>Hourly Rate</label>
+                    <input type="text" class="field" required>
                     <a href="availableGarage.html" style="text-decoration: none;color: black; width: 80px;"><button
                             class="btn2">Submit</button></a>
                 </div>
+
             </div>
         </div>
     </main>
@@ -132,6 +135,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script src="editPrice.js"></script>
+
 </body>
 
 </html>
