@@ -4,7 +4,7 @@ function showVehicle() {
     var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Vehicle Owner Form</h2>
-                        <div class="form" action="signup.php" method="POST">
+                        <form class="form" action="signup.php" method="POST">
                             <input type="hidden" name="accountType" value="Vehicle Owner">
                             <label>Full Name: </label>
                             <input class="field" name="name" required>
@@ -25,7 +25,7 @@ function showVehicle() {
                             <label>Vehicle Model: </label>
                             <input class="field" name="vmodel" required>
                             <br>
-                            <input type="submit" class="submit" value="submit"></input>
+                            <input type="submit" class="submit"></input>
                         </div>
                         <br>`;
     oldContent.appendChild(newDiv);
@@ -37,7 +37,7 @@ function showGarage() {
     var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Garage Owner Form</h2>
-                        <div class="form" action="signup.php" method="POST">
+                        <form class="form" action="signup.php" method="POST">
                             <input type="hidden" name="accountType" value="Garage Owner">
                             <label>Full Name: </label>
                             <input class="field" name="name" required>
@@ -70,7 +70,7 @@ function showSuper() {
     var newDiv = document.createElement("div");
     newDiv.innerHTML = `<br><br>
                         <h2>Supervisor Form</h2>
-                        <div class="form" action="signup.php" method="POST">
+                        <form class="form" action="signup.php" method="POST">
                             <input type="hidden" name="accountType" value="Supervisor"> 
                             <label>Full Name: </label>
                             <input class="field" name="name" required>
@@ -88,3 +88,4 @@ function showSuper() {
                         <br>`;
     oldContent.appendChild(newDiv);
 }
+
