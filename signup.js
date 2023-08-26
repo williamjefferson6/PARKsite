@@ -46,7 +46,7 @@ function showGarage() {
                             <label>Password: </label>
                             <input class="field" name="pass" required>
                             <label>National ID: </label>
-                            <input class="field" name="field" required>
+                            <input class="field" name="nid" required>
                             <label>Phone Number: </label>
                             <input class="field" name="phone" required>
                             <label>Garage Address: </label>
@@ -79,7 +79,7 @@ function showSuper() {
                             <label>Password: </label>
                             <input class="field" name="pass" required>
                             <label>National ID: </label>
-                            <input class="field" name="field" required>
+                            <input class="field" name="nid" required>
                             <label>Phone Number: </label>
                             <input class="field" name="phone" required>
                             <br>
@@ -88,4 +88,3 @@ function showSuper() {
                         <br>`;
     oldContent.appendChild(newDiv);
 }
-
