@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 26, 2023 at 10:31 AM
+-- Generation Time: Aug 26, 2023 at 12:00 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -62,6 +62,46 @@ INSERT INTO `contact` (`name`, `email`, `phone`, `message`) VALUES
 ('William Jefferson Mondol', 'shovon2k2k@gmail.com', '01730138692', 'help me, im under the water'),
 ('Fardin Ahsan Shafi', 'fardin467@gmail.com', '0191199222', 'attention pickpockeeeeet'),
 ('Shanjidul Hasan Shajid', 'karode4067@khaxan.com', '0191199222', 'my thoughts are as empty as my ass');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `earnings`
+--
+
+CREATE TABLE `earnings` (
+  `user` varchar(20) NOT NULL,
+  `cut` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `earnings`
+--
+
+INSERT INTO `earnings` (`user`, `cut`) VALUES
+('company', 15),
+('supervisor', 30),
+('Garage Owner', 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pricing`
+--
+
+CREATE TABLE `pricing` (
+  `city` varchar(100) NOT NULL,
+  `area` varchar(100) NOT NULL,
+  `base` int(11) NOT NULL,
+  `hourly` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pricing`
+--
+
+INSERT INTO `pricing` (`city`, `area`, `base`, `hourly`) VALUES
+('dhaka', 'taltola', 50, 50);
 
 -- --------------------------------------------------------
 
