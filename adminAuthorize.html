@@ -23,35 +23,45 @@
         </button>
         <div class="collapse navbtn navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="https://9anime.gs/home" target="_blank" class="nav-link account">Account</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <button class="btn1">Sign Up</button>
+              <button class="btn1" onclick="goBack()">Go Back</button>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <button class="btn2">Login</button>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
   </header>
   <main>
-   <br />
-    <div class="choice">
-      <h1>Select Account Type</h1>
-      <br><br><br>
-      <div class="typebtn">
-          <button onclick="showVehicle()" class="type"> Vehicle Owner</button>
-          <button onclick="showGarage()" class="type">Garage Owner</button>
-          <button onclick="showSuper()" class="type">Supervisor</button>
+    <div class="info">
+      <div class="left common">
+        <label for="">Registration ID:</label>
+        <label for="">Registration Date:</label>
+        <label id="" >User Type:</label>
+        <label id="" >Name: Lorem, ipsum.</label>
+        <label id="" >Email: Lorem, ipsum.</label>
+        <label id="" >NID: 12901290129</label>
+        <label id="" >Phone: 98137912763091</label>
       </div>
-  </div>
-  <div id="form">
-
-  </div>
-  <br /><br /><br /><br /><br /><br />
+      <div class="right common">
+        <label id="" >Vehicle Type:</label>
+        <label id="" >Vehicle Model:</label>
+        <label id="" >Vehicle Reg:</label>
+        <label id="" >Vehicle License:</label>
+        <label id="" >Garage Size:</label>
+        <label id="" >Garage Capacity:</label>
+        <label id="" >Garage Address:</label>
+        <label for="">Supervisor NID:</label>
+    </div>
+    </div>
+    <div class="butt">
+      <button type="submit" class="btn3" >AUTHORIZE</button> <button type="submit" class="btn3 btn4" >REJECT</button>
+    </div>
   </main>
   <footer class="text-center text-lg-start text-white bg-dark">
     <!-- Grid container -->
@@ -90,6 +100,7 @@
       © 2023 Copyright:<a class="text-white" href="index.html">www.parksite.com.bd</a>
     </div>
   </footer>
+  <script src="goBack.js"></script>
   <script src="adminAuthorize.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
