@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 26, 2023 at 07:41 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Aug 26, 2023 at 09:55 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,6 +59,15 @@ CREATE TABLE `client` (
   `go` int(11) DEFAULT NULL,
   `s` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `client`
+--
+
+INSERT INTO `client` (`clientid`, `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `vo`, `go`, `s`) VALUES
+(10, 'William Jefferson', '1234567890', '1234567890', '1234567890', '1234567890', 'Garage Owner', NULL, 3, NULL),
+(11, 'Fardin Shafi', '1234567891', '1234567891', '1234567891', '1234567891', 'Vehicle Owner', 7, NULL, NULL),
+(12, 'Shanjidul Shajid', '1234567892', '1234567892', '1234567892', '1234567892', 'Supervisor', NULL, NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -119,6 +128,13 @@ CREATE TABLE `garage` (
   `pickupaccept` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `garage`
+--
+
+INSERT INTO `garage` (`garageid`, `garsize`, `garcap`, `garadr`, `availability`, `caraccept`, `bikeaccept`, `pickupaccept`) VALUES
+(4, '1234567890', '1234567890', '1234567890', NULL, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -130,6 +146,13 @@ CREATE TABLE `go` (
   `supnid` varchar(30) NOT NULL,
   `garageid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `go`
+--
+
+INSERT INTO `go` (`goid`, `supnid`, `garageid`) VALUES
+(3, '1234567890', 4);
 
 -- --------------------------------------------------------
 
@@ -178,6 +201,19 @@ CREATE TABLE `registration` (
   `seid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `registration`
+--
+
+INSERT INTO `registration` (`regid`, `status`, `regdate`, `name`, `email`, `pass`, `nid`, `phone`, `vtype`, `vmodel`, `vreg`, `vlisc`, `garsize`, `garcap`, `garadr`, `supnid`, `type`, `seid`) VALUES
+(1, 1, '2023-08-26', 'William Jefferson', '1234567890', '1234567890', '1234567890', '1234567890', '', '', '', '', '1234567890', '1234567890', '1234567890', '1234567890', 'Garage Owner', 1),
+(2, 1, '2023-08-26', 'Fardin Shafi', '1234567891', '1234567891', '1234567891', '1234567891', '1234567891', '1234567891', '1234567891', '1234567891', '', '', '', '', 'Vehicle Owner', 1),
+(3, 1, '2023-08-26', 'Shanjidul Shajid', '1234567892', '1234567892', '1234567892', '1234567892', '', '', '', '', '', '', '', '', 'Supervisor', 1),
+(4, 2, '2023-08-26', 'Annanya Preeta', '1234567892', '1234567892', '1234567892', '1234567892', '', '', '', '', '', '', '', '', 'Supervisor', 1),
+(5, 2, '2023-08-26', 'Afiya Sufi', '1234567893', '1234567893', '1234567893', '1234567893', '', '', '', '', '1234567893', '1234567893', '1234567893', '1234567893', 'Garage Owner', 1),
+(6, 2, '2023-08-26', 'Subha', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '', '', '', '', 'Vehicle Owner', 1),
+(7, 0, '2023-08-26', 'Hello', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '1234567894', '', '', '', '', 'Vehicle Owner', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -188,6 +224,13 @@ CREATE TABLE `super` (
   `sid` int(11) NOT NULL,
   `workhrs` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `super`
+--
+
+INSERT INTO `super` (`sid`, `workhrs`) VALUES
+(2, '2');
 
 -- --------------------------------------------------------
 
@@ -202,6 +245,13 @@ CREATE TABLE `vehicle` (
   `vehicleReg` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `vehicle`
+--
+
+INSERT INTO `vehicle` (`vehicleid`, `vehicleType`, `vehicleModel`, `vehicleReg`) VALUES
+(7, '1234567891', '1234567891', '1234567891');
+
 -- --------------------------------------------------------
 
 --
@@ -213,6 +263,13 @@ CREATE TABLE `vo` (
   `licenseNo` varchar(30) NOT NULL,
   `vehicleid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `vo`
+--
+
+INSERT INTO `vo` (`void`, `licenseNo`, `vehicleid`) VALUES
+(7, '1234567891', 7);
 
 --
 -- Indexes for dumped tables
@@ -286,43 +343,43 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `clientid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `clientid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `garage`
 --
 ALTER TABLE `garage`
-  MODIFY `garageid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `garageid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `go`
 --
 ALTER TABLE `go`
-  MODIFY `goid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `goid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `regid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `regid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `super`
 --
 ALTER TABLE `super`
-  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `sid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `vehicle`
 --
 ALTER TABLE `vehicle`
-  MODIFY `vehicleid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `vehicleid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `vo`
 --
 ALTER TABLE `vo`
-  MODIFY `void` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `void` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

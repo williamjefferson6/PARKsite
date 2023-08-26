@@ -23,7 +23,7 @@
     $pass=$row['pass'];
     
     if (isset($_POST['reject'])){
-      $query="UPDATE `registration` SET `status`='2' WHERE regid=$regid";
+      $query="UPDATE `registration` SET `status`='2' WHERE regid = $regid";
        if (mysqli_query($conn, $query)){
         header("Location: verifyUser.php");
         exit();
@@ -31,17 +31,20 @@
     }
 
     if (isset($_POST['authorize'])){
-      
       if($type=='Vehicle Owner'){
           $q="INSERT INTO `vehicle`( `vehicleType`, `vehicleModel`, `vehicleReg`) VALUES ('$vtype','$vmodel','$vreg')";
           mysqli_query($conn, $q);
           $q2="SELECT vehicleid FROM vehicle ORDER BY vehicleid DESC LIMIT 1";
           $veid = mysqli_query($conn, $q2);
+          $row = mysqli_fetch_assoc($veid);
+          $veid = $row['vehicleid'];
           $q3="INSERT INTO `vo`( `licenseNo`, `vehicleid`) VALUES ('$vlisc','$veid')";
           mysqli_query($conn, $q3);
           $q4="SELECT void FROM vo ORDER BY void DESC LIMIT 1";
           $void = mysqli_query($conn, $q4);
-          $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `vo`, `go`, `s`) VALUES ('$name','$email','$pass','$nid','$phone','$type','$void','','')";
+          $row = mysqli_fetch_assoc($void);
+          $void = $row['void'];
+          $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `vo`) VALUES ('$name','$email','$pass','$nid','$phone','$type','$void')";
           mysqli_query($conn, $q5);
       }
       if($type=='Garage Owner'){
@@ -49,11 +52,15 @@
           mysqli_query($conn, $q);
           $q2="SELECT garageid FROM garage ORDER BY garageid DESC LIMIT 1";
           $gaid = mysqli_query($conn, $q2);
+          $row = mysqli_fetch_assoc($gaid);
+          $gaid = $row['garageid'];
           $q3="INSERT INTO `go`( `supnid`, `garageid`) VALUES ('$supnid','$gaid')";
           mysqli_query($conn, $q3);
           $q4="SELECT goid FROM go ORDER BY goid DESC LIMIT 1";
           $goid = mysqli_query($conn, $q4);
-          $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `vo`, `go`, `s`) VALUES ('$name','$email','$pass','$nid','$phone','$type','','$goid','')";
+          $row = mysqli_fetch_assoc($goid);
+          $goid = $row['goid'];
+          $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `go`) VALUES ('$name','$email','$pass','$nid','$phone','$type','$goid')";
           mysqli_query($conn, $q5);
       }
       if($type=='Supervisor'){
@@ -61,11 +68,13 @@
         mysqli_query($conn, $q3);
         $q4="SELECT sid FROM super ORDER BY sid DESC LIMIT 1";
         $sid = mysqli_query($conn, $q4);
-        $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `vo`, `go`, `s`) VALUES ('$name','$email','$pass','$nid','$phone','$type','','','$sid')";
+        $row = mysqli_fetch_assoc($sid);
+        $sid = $row['sid'];
+        $q5="INSERT INTO `client`( `name`, `email`, `pass`, `nid`, `phone`, `ctype`, `s`) VALUES ('$name','$email','$pass','$nid','$phone','$type','$sid')";
         mysqli_query($conn, $q5);
       }
       
-      $query="UPDATE `registration` SET `status`='1' WHERE regid=$regid";
+      $query="UPDATE `registration` SET `status`='1' WHERE regid = $regid";
        
       if (mysqli_query($conn, $query)){
         header("Location: verifyUser.php");
@@ -136,7 +145,12 @@
     </div>
     </div>
     <div class="butt">
-      <button type="submit" name="authorize" class="btn3" >AUTHORIZE</button> <button type="submit" name="reject" class="btn3 btn4" >REJECT</button>
+      <form action="adminAuthorize.php?regid=<?php echo $regid ?>" method="POST">
+        <button type="submit" name="authorize" class="btn3" >AUTHORIZE</button>
+      </form>
+      <form action="adminAuthorize.php?regid=<?php echo $regid ?>" method="POST">
+       <button type="submit" name="reject" class="btn3 btn4" >REJECT</button>
+      </form>
     </div>
   </main>
   <footer class="text-center text-lg-start text-white bg-dark">
