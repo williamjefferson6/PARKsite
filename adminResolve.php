@@ -14,6 +14,19 @@
         $email[]=$row['email'];
         $message[]=$row['message'];
     }
+
+    if (isset($_POST['resolve'])) {
+      $delete_name = $_POST['delete_name'];
+      $delete_email = $_POST['delete_email'];
+      $delete_phone = $_POST['delete_phone'];
+  
+      // Perform the deletion using the combination of columns
+      $delete_query = "DELETE FROM contact WHERE name = '$delete_name' AND email = '$delete_email' AND phone = '$delete_phone'";
+      if (mysqli_query($conn, $delete_query)) {
+        header("Location: adminResolve.php");
+        exit(); 
+      }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +93,12 @@
                     echo ' <div class="bar2">';
                     echo '<p>' . $message[$i] . '</p>';
                     echo '</div>';
-                    echo '<button> Resolve</button>';
+                    echo '<form action="adminResolve.php" method="post">';
+                    echo '<input type="hidden" name="delete_name" value="' . $name[$i] . '">';
+                    echo '<input type="hidden" name="delete_email" value="' . $email[$i] . '">';
+                    echo '<input type="hidden" name="delete_phone" value="' . $phone[$i] . '">';
+                    echo '<button type="submit" name="resolve" class="resolve-btn">Resolve</button>';
+                    echo '</form>';
                     echo '</div>';
                 }
             ?>

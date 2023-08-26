@@ -1,3 +1,13 @@
+<?php
+    include 'connection.php';
+    $sql = "SELECT * FROM contact;";
+    $result = mysqli_query($conn, $sql);
+    $count = 0;
+    while ($row = mysqli_fetch_assoc($result)) {
+      $count = $count + 1;
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,8 +91,7 @@
                 <img src="images/query.png">
                 <h3>Unresolved Queries</h3>
                 <?php
-                    $count = count([1, 2, 3, 67, 68, 69]);
-                    echo '<h5>' . $count . '</h5>'; // Put the variable name with the variable name
+                    echo '<h5>' . $count . '</h5>';
                 ?>
                 <a href="adminResolve.html"><button class="btn3">Resolve</button></a>
             </div>
