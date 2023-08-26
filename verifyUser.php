@@ -1,6 +1,6 @@
 <?php
     include 'connection.php';
-    $query = "SELECT regid, name FROM `registration`";
+    $query = "SELECT regid, name FROM `registration` WHERE status = 0";
     $result = $conn->query($query);    
 ?>
 
