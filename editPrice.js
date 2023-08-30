@@ -4,19 +4,22 @@ function add() {
     var newDiv = document.createElement("div");
     newDiv.className = "myform";
     // newDiv.setAttribute('id', 'myform2');
-    newDiv.innerHTML = `<label>Enter City</label>
-        <input type="text" class="field" required>
+    newDiv.innerHTML =
+        `<form class="myform" action="addPrice.php"  method="POST"
+        <label>Enter City</label>
+        <input type="text" name="city" class="field" required>
         <label>Enter Area</label>
-        <input type="text" class="field" required>
+        <input type="text" class="field" name="area" required>
         <label>Base Fare</label>
-        <input type="text" class="field" required>
+        <input type="text" class="field" name="base" required>
         <label>Hourly Rate</label>
-        <input type="text" class="field" required>
+        <input type="text" class="field" name="hourly" required>
 
         <a href="" style="text-decoration: none;color: black; width: 80px;"><button
                 class="btn2">Submit</button></a>`;
     hahaDiv.appendChild(newDiv);
 }
+
 function edit() {
     var hahaDiv = document.getElementById("haha");
     hahaDiv.textContent = "";
@@ -41,6 +44,7 @@ function edit() {
 
                                         <button><img class="search-icon src_icn" src="images/search.png" alt=""></button>
                                     </div>
+                                
                                     <div id="myform1" class="myform">
                                         
                                         <label>Base Fare</label>
