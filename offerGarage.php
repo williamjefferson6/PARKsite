@@ -1,3 +1,63 @@
+<?php
+
+include 'connection.php';
+
+/*$sql = "SELECT * FROM contact";
+    $result = mysqli_query($conn, $sql);
+
+    $name = array();
+    $phone = array();
+    $email = array();
+    $message = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+        // $tasks[] = $row['To-Do Activity'];
+        $name[]=$row['name'];
+        $phone[]=$row['phone'];
+        $email[]=$row['email'];
+        $message[]=$row['message'];
+    }*/
+
+$garid = $_POST["gid"];
+$sql ="SELECT * FROM garage";
+
+$result = mysqli_query($conn,$sql);
+$garlist = array();
+
+while($row =mysqli_fetch_assoc($result)){
+    $garlist[] = $row['garageid'];
+}
+
+/*if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $accountType = $_POST["accountType"];
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $pass = $_POST["pass"];
+    $nid = $_POST["nid"];
+    $phone = $_POST["phone"];
+    $vlisc = $_POST["vlisc"];
+    $vreg = $_POST["vreg"];
+    $vtype = $_POST["vtype"];
+    $vmodel = $_POST["vmodel"];
+    $garadr = $_POST["garadr"];
+    $garsize = $_POST["garsize"];
+    $garcap = $_POST["garcap"];
+    $supnid = $_POST["supnid"];
+    $seid=1;
+    $status=0;
+    $currentDate = date("Y-m-d");
+   
+    
+
+    $sql = "INSERT INTO `registration`(
+         `status`, `regdate`, `name`, `email`, `pass`, `nid`, `phone`, `vtype`, `vmodel`, `vreg`, `vlisc`, `garsize`, `garcap`, `garadr`, `supnid`, `type`, `seid`) VALUES ('$status','$currentDate','$name','$email','$pass','$nid','$phone','$vtype','$vmodel','$vreg','$vlisc','$garsize','$garcap','$garadr','$supnid','$accountType','$seid')";
+
+    $conn->query($sql);
+}*/
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    $
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,15 +115,16 @@
                 <div class="dropdown">
                     <select class="btn lala myBtn" name="gid">
                         Select Your Garage
-                        <option value="1">garage 1</option>
-                        <option value="2">garage 2</option>
-                        <option value="3">garage 3</option>
-                        <option value="4">garage 4</option>
+                        <?php
+                       $count = 1; 
+                       for ($i=0;$i<count($garlist);$i++){
+                        echo ' <option value=$count> Garage ' . $garlist[$i] . '</option> ';
+                    }
+                        ?>
+
                     </select>
 
-
-                    <button class="lala">Supervisor Availability &nbsp <img style="width: 20px;" src="images/accept.png"
-                            alt="">
+                    <button class="lala">Supervisor Availability &nbsp <img style="width: 20px;" src="images/accept.png" alt="">
                     </button>
                     <button class="lala">Location Wise Rent &nbsp <img style="width: 20px;"
                             src="images/delete-button.png" alt="">
@@ -82,7 +143,7 @@
                         <label>Date: </label>
                         <input type="date" class="field" required>
                         <br>
-                        <button type="button" style="color: black;" class="btn btn-primary btn1"  data-bs-toggle="modal"
+                        <button type="button" style="color: black;margin-top: 10px;" class="btn btn-primary btn1"  data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Submit
                         </button>

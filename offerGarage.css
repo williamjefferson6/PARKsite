@@ -134,7 +134,9 @@ main {
     flex-direction: column;
     border-left: 3px solid #8bc052;
 }
-
+option{
+    background-color: #fff;
+}
 .qq {
     display: flex;
     justify-content: center;

@@ -30,19 +30,19 @@ include 'connection.php';
                     }
                 }
                 else{
-                    $message =  "Incorrect User Type";
+                    $message =  "Incorrect Credentials";
                 }
             } 
             else {
-                $message = "Incorrect Password";
+                $message = "Incorrect Credentials";
             }
         } 
         else {
-            $message = "User not found";
+            $message = "Incorrect Credentials";
         }
     } 
     else {
-        $message = "Query failed: ";
+        $message = "Incorrect Credentials";
     }
 
     $conn->close();
