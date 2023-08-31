@@ -1,3 +1,54 @@
+<?php
+
+include 'connection.php';
+    $message = "";
+    $clientid = $_POST["clientid"];
+    $pass = $_POST["pass"];
+    $ctype = $_POST["ctype"];
+
+
+    $query = "SELECT * FROM client WHERE clientid = '$clientid'";
+    $result = mysqli_query($conn,$query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            $user = $result->fetch_assoc();
+            if ($pass === $user["pass"]) {
+                if($ctype === $user["ctype"]){
+                    switch ($ctype) {
+                        case 'Vehicle Owner':
+                            header("Location: bookGarage.html");
+                            exit;
+                        case 'Garage Owner':
+                            header("Location: offerGarage.html");
+                            exit;
+                        case 'Supervisor':
+                            header("Location: supervise.html");
+                            exit;
+                        default:
+                            header("Location: processing.html");
+                    }
+                }
+                else{
+                    $message =  "Incorrect User Type";
+                }
+            } 
+            else {
+                $message = "Incorrect Password";
+            }
+        } 
+        else {
+            $message = "User not found";
+        }
+    } 
+    else {
+        $message = "Query failed: ";
+    }
+
+    $conn->close();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,6 +85,9 @@
                 </select>
                 <br>
                 <a href="#" class="link">Forgot Your Password?</a>
+                <?php
+                echo "<p>" . $message . "</p>";
+                ?>
             </div>
             <div class="action">
                 <button type="submit" value="submit">Log in</button>
@@ -47,3 +101,4 @@
 </body>
 
 </html>
+
