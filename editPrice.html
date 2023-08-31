@@ -56,34 +56,23 @@
             <div id="haha" class="haha">
                 <div id="search-div" class="search-div">
                     <label>Select City</label>
-                    <select class="combo-box" name="" id="">
-                        <option value="">Dhaka</option>
-                        <option value="">Barishal</option>
-                        <option value="">Cumilla</option>
-                        <option value="">Rajshahi</option>
-                        <option value="">Lalbag</option>
+                    <select class="combo-box" id="citySelect">
+                        <!-- Options will be dynamically added here -->
                     </select>
                     <label>Select Area</label>
-                    <select class="combo-box" name="" id="">
-                        <option value="">Dhaka</option>
-                        <option value="">Barishal</option>
-                        <option value="">Cumilla</option>
-                        <option value="">Rajshahi</option>
-                        <option value="">Lalbag</option>
+                    <select class="combo-box" id="areaSelect">
+                        <!-- Options will be dynamically added here -->
                     </select>
-
-                    <button><img class="search-icon src_icn" src="images/search.png" alt=""></button>
+                    <button id="searchButton"><img class="search-icon src_icn" src="images/search.png" alt=""></button>
                 </div>
                 <br><br><br>
-                <form id="myform1" class="myform">
+                <form id="editForm" class="myform">
                     <label>Base Fare</label>
-                    <input type="text" value="100" class="field" required>
+                    <input type="text" id="baseFareInput" class="field" required>
                     <label>Hourly Rate</label>
-                    <input type="text" class="field" required>
-                    <a href="availableGarage.html" style="text-decoration: none;color: black; width: 80px;"><button
-                            class="btn1">Submit</button></a>
+                    <input type="text" id="hourlyRateInput" class="field" required>
+                    <button type="submit" class="btn1">Submit</button>
                 </form>
-
             </div>
         </div>
     </main>

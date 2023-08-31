@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
    
     
 
-    $sql = "INSERT INTO `pricing`(`city`, `area`, `base`, `hourly) VALUES ('$city','$area','$base','$hourly')";
+    $sql = "INSERT INTO `pricing`(`city`, `area`, `base`, `hourly`) VALUES ('$city','$area','$base','$hourly')";
 
     $conn->query($sql);
 }
