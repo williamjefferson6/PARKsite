@@ -17,7 +17,7 @@ include 'connection.php';
                 if($ctype === $user["ctype"]){
                     switch ($ctype) {
                         case 'Vehicle Owner':
-                            header("Location: bookGarage.html");
+                            header("Location: bookGarage.php");
                             exit;
                         case 'Garage Owner':
                             header("Location: offerGarage.html");
