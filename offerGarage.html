@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="offerGarage.css" />
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <title>Offer Garage</title>
+    <script src="offerGarage.js"></script>
 </head>
 
 <body>
@@ -53,14 +54,6 @@
             </div>
             <div class="window">
                 <div class="dropdown">
-                    <select class="btn lala myBtn" name="gid">
-                        Select Your Garage
-                        <option value="1">garage 1</option>
-                        <option value="2">garage 2</option>
-                        <option value="3">garage 3</option>
-                        <option value="4">garage 4</option>
-                    </select>
-
 
                     <button class="lala">Supervisor Availability &nbsp <img style="width: 20px;" src="images/accept.png"
                             alt="">
@@ -74,19 +67,23 @@
                 <div class="info-div qq">
                     <br>
                     <h2>Garage Availability Details</h2>
-                    <div class="form qq">
+                    
+                    <form id="reservationForm" class="form qq">
+                        <label>Select Your Garage: </label>
+                        <select id="garageSelect" name="garageid" class="field">
+                        </select>
                         <label>Starting Time: </label>
-                        <input type="time" class="field" required>
-                        <label>Ending Time: </label>
-                        <input type="time" class="field" required>
-                        <label>Date: </label>
-                        <input type="date" class="field" required>
-                        <br>
-                        <button type="button" style="color: black;" class="btn btn-primary btn1"  data-bs-toggle="modal"
+                        <input type="time" id="startTime" class="field" name="aStartTime">
+                        <label >End Time:</label>
+                        <input type="time" id="endTime" name="aEndTime" class="field">
+                        <label>Reservation Date:</label>
+                        <input type="date" id="reservationDate" class="field" name="aDate"> <br>
+                        <button type="button" id="submitButton" style="color: black;" class="btn btn-primary btn1"  data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Submit
                         </button>
 
+                        
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -108,7 +105,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
+                    
                 </div>
             </div>
         </div>
