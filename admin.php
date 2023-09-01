@@ -53,7 +53,7 @@
 
     <div class="sidebar">
       <a href="admin.html"><button class="sidebtn"><img src="images/analytics_994170.png" alt=""> <br>View System Statistics</button></a>
-      <a href="verifyUser.html"><button class="sidebtn"><img src="images/authentication_1791961.png" alt=""><br>Verify User</button></a>
+      <a href="verifyUser.php"><button class="sidebtn"><img src="images/authentication_1791961.png" alt=""><br>Verify User</button></a>
       <a href="editPrice.html"><button class="sidebtn"><img src="images/pricing_1728450.png"
             alt=""><br>Edit Price</button></a>
       <a href="#"><button class="sidebtn"><img src="images/cheque_2250736.png" alt=""><br>Edit Earnings</button></a>
@@ -134,7 +134,7 @@
             <a class="links" href="termsAndCondition.html">
               <h6 class="text-uppercase mb-4 font-weight-bold">Terms & Conditions</h6>
             </a>
-            <p><i class="fas fa-envelope mr-3"></i> parksite@gmail.com</p>
+            <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html" style=" color: white;">Language: বাংলা</a></p>
           </div>
         </div>
         <!--Grid row-->

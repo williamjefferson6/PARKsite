@@ -194,7 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <a class="links" href="termsAndCondition.html">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Terms & Conditions</h6>
                         </a>
-                        <p><i class="fas fa-envelope mr-3"></i> parksite@gmail.com</p>
+                        <p><i class="fas fa-envelope mr-3"></i> <a href="Bangla/homeBangla.html" style=" color: white;">Language: বাংলা</a></p>
                     </div>
                 </div>
             </section>
