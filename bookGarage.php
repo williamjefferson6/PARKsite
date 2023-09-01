@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <div class="collapse navbtn navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="account.html" class="nav-link account">Preetar Parker</a>
+                            <a href="account.html" class="nav-link account">William Jefferson</a>
                         </li>
                         <li class="nav-item">
                             <a href="home.html"><button class="btn2">Logout</button></a>
